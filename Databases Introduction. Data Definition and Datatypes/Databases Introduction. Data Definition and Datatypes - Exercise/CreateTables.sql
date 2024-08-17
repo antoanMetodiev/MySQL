@@ -8,5 +8,3 @@ CREATE TABLE towns(
    town_id INT auto_increment primary key NOT NULL,
    name VARCHAR(50)
 );
-
-
