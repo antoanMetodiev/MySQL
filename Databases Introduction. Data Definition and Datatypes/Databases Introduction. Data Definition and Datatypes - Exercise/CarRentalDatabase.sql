@@ -7,9 +7,9 @@ CREATE TABLE categories(
 	weekend_rate DOUBLE (2,2)
 );
 
-
 INSERT categories(category)
 VALUES ('VAN'), ('VAN'), ('VAN');
+
 
 CREATE TABLE cars(
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -26,14 +26,12 @@ CREATE TABLE cars(
 INSERT cars(plate_number)
 VALUES (08122), (123), (124124);
 
-
 CREATE TABLE employees(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     notes TEXT
 );
-
 
 INSERT employees(first_name, last_name)
 VALUES ('LILYAN', 'ivanov'), ('aleksandar', 'petrov'), ('LILYAN', 'robertov');
@@ -51,6 +49,7 @@ CREATE TABLE customers(
 
 INSERT customers(driver_licence_number, full_name)
 VALUES (1234, 'Gencho Minev'), (143212, 'Gencho Petrov'), (54121, 'Qsen Minev');
+
 
 CREATE TABLE rental_orders (
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -72,7 +71,6 @@ CREATE TABLE rental_orders (
     CONSTRAINT FOREIGN KEY (employee_id) REFERENCES employees(id),
     CONSTRAINT FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
-
 
 INSERT rental_orders(kilometrage_start, kilometrage_end)
 VALUES (3, 7), (3, 7), (3, 7);
