@@ -1,0 +1,1 @@
+SELECT COUNT(first_name) AS count FROM wizzard_deposits;
