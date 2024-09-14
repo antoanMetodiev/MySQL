@@ -1,0 +1,4 @@
+SELECT employee_id, first_name, last_name, name AS 'department_name' FROM employees e
+JOIN departments d ON d.department_id = e.department_id
+WHERE d.name = 'Sales'
+ORDER BY e.employee_id DESC;
