@@ -1,10 +1,7 @@
-
-
 CREATE TABLE countries(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(40) UNIQUE NOT NULL
 );
-
 
 CREATE TABLE cities(
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -50,7 +47,6 @@ CREATE TABLE courses(
 
     FOREIGN KEY(university_id) REFERENCES universities(id)
 );
-
 
 CREATE TABLE students_courses(
 	grade DECIMAL(19, 2) NOT NULL,
