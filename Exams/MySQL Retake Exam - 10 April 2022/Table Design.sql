@@ -1,5 +1,3 @@
-
-
 CREATE TABLE countries(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL UNIQUE,
@@ -60,10 +58,3 @@ CREATE TABLE genres_movies(
     FOREIGN KEY(genre_id) REFERENCES genres(id),
     FOREIGN KEY(movie_id) REFERENCES movies(id)
 );
-
-
-
-
-
-
-
