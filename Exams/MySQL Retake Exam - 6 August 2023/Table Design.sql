@@ -1,4 +1,3 @@
-
 CREATE TABLE cities(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(60) NOT NULL UNIQUE
@@ -66,13 +65,3 @@ CREATE TABLE property_transactions(
     FOREIGN KEY(property_id) REFERENCES properties(id),
     FOREIGN KEY(buyer_id) REFERENCES buyers(id)
 );
-
-
-
-
-
-
-
-
-
-
