@@ -1,10 +1,10 @@
 CREATE TABLE minions(
-    id INT auto_increment primary key NOT NULL,
-    name VARCHAR(50),
-    age INT
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(80) NOT NULL,
+  age INT NOT NULL
 );
 
 CREATE TABLE towns(
-   town_id INT auto_increment primary key NOT NULL,
-   name VARCHAR(50)
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(80) NOT NULL
 );
