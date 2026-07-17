@@ -1,2 +1,2 @@
 SELECT title FROM books
-WHERE SUBSTRING(title, 1, 4) = 'The ';
+WHERE SUBSTRING(title, 1, 3) = 'The';
