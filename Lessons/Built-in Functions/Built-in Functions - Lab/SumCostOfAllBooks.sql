@@ -1,1 +1,1 @@
-SELECT ROUND(SUM(cost), 2) FROM books;
+SELECT FORMAT(SUM(cost), 2) FROM books;
