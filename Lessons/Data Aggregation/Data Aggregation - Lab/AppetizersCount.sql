@@ -1,3 +1,5 @@
-SELECT COUNT(category_id) FROM products
-WHERE category_id = 2 AND price > 8
-GROUP BY category_id;
+SELECT COUNT(c.name) FROM products p
+JOIN categories c ON c.id = p.category_id
+WHERE p.price > 8
+GROUP BY c.name
+HAVING c.name = 'appetizers';
