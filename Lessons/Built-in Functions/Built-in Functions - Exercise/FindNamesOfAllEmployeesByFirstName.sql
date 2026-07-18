@@ -1,2 +1,3 @@
 SELECT first_name, last_name FROM employees
-WHERE LEFT(first_name, 2) = 'Sa';
+WHERE first_name LIKE 'Sa%'
+ORDER BY id;
