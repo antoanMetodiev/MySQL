@@ -1,4 +1,4 @@
-SELECT department_id, ROUND(MIN(salary)) AS Min_Salary FROM employees
+SELECT department_id, MIN(salary) AS 'min_salary' FROM employees
 GROUP BY department_id
-HAVING Min_Salary > 800
-ORDER BY department_id;
+HAVING min_salary > 800
+ORDER BY min_salary LIMIT 1;
